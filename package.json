@@ -1,0 +1,27 @@
+{
+  "name": "full-project-y-khoa",
+  "version": "1.0.0",
+  "description": "web y khoa chuan doan benh online",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrieuHuy203/project-web-y-khoa.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "dev thanh trieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrieuHuy203/project-web-y-khoa/issues"
+  },
+  "homepage": "https://github.com/TrieuHuy203/project-web-y-khoa#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
