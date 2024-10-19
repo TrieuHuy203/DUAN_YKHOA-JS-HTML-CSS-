@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section,
+.services-section,
+.benefits-section,
+.testimonials-section,
+.contact-section {
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.benefits-section ul {
+  padding-left: 20px;
+}
+
+.benefits-section li {
+  margin: 10px 0;
+}
+
+.testimonial-item {
+  margin: 20px 0;
+}
+
+blockquote {
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  position: relative;
+}

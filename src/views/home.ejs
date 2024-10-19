@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <!--reset css-->
+    <!--link reset preset the css file-->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!--style css-->
+    <link rel="stylesheet" href="/css/home.css" />
+    <!-- link font popings -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      .logo-container {
+        text-align: center;
+      }
+
+      .logo {
+        font-size: 48px; /* Kích thước chữ */
+        font-weight: bold;
+        display: flex;
+        align-items: baseline; /* Căn chỉnh chữ */
+      }
+
+      .med {
+        color: #007bff; /* Màu cho phần "Medi" */
+      }
+
+      .scan {
+        color: #28a745; /* Màu cho phần "Scan" */
+        margin-left: 5px; /* Khoảng cách giữa hai phần */
+      }
+
+      /* Tùy chọn: Hiệu ứng hover */
+      .logo:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- part header -->
+    <!-- The header tag helps people understand that this is the first part of the web page -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="bodyheader">
+          <!-- logo -->
+          <div class="logo-container">
+            <div class="logo">
+              <span class="med">Medi</span><span class="scan">Scan</span>
+            </div>
+          </div>
+          <!-- nav -->
+          <!-- tag nav help user known is menu bar -->
+          <nav class="nav">
+            <ul>
+              <li class="active">
+                <a href="#!"><b>TRANG CHỦ</b></a>
+              </li>
+              <li>
+                <a href="#!">GIỚI THIỆU CHUNG</a>
+                <ul>
+                  <li><a href="/vision">Tầm nhìn</a></li>
+                  <li><a href="/mission">Sứ mệnh</a></li>
+                  <li><a href="/value">Giá trị cốt lõi</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#!">ĐỘI NGŨ BÁC SĨ</a>
+                <ul>
+                  <li><a href="/internist">Chuyên khoa Nội</a></li>
+                  <li><a href="/Surgeon">Chuyên khoa Ngoại</a></li>
+                  <li><a href="/pediatrics">Chuyên khoa Nhi</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#!">ĐẶT LỊCH KHÁM</a>
+                <ul>
+                  <li><a href="/overview">Khám tổng quát</a></li>
+                  <li><a href="/specialist">Khám chuyên khoa</a></li>
+                  <li><a href="/athome">Khám tại nhà</a></li>
+                  <li><a href="/diagnosis">Chuẩn đoán bệnh</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- btn -->
+          <div class="action">
+            <a href="/register" class="btn btn-sign-up">Đăng xuất</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  part main -->
+    <main>
+      <!-- hero -->
+      <div class="hero">
+        <div class="main-content">
+          <div class="bodymain">
+            <!--  left block -->
+            <div class="media-block">
+              <img
+                src="images/Hinh-bac-si.png"
+                alt="Learn without limits and spread knowledge."
+                class="img"
+              />
+              <div class="hero-summary">
+                <!-- item 1 -->
+                <div class="item">
+                  <div class="icon">
+                    <img src="images/des (2).svg" alt="" />
+                  </div>
+
+                  <div class="info">
+                    <p class="label">10 Dịch vụ</p>
+                    <p class="title">Chuẩn đoán hình ảnh</p>
+                  </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="item">
+                  <div class="icon no2">
+                    <img src="images/dev.svg" alt="" />
+                  </div>
+
+                  <div class="info">
+                    <p class="label">20 Dịch vụ</p>
+                    <p class="title">Chuyên khoa nội tổng quát</p>
+                  </div>
+                </div>
+
+                <!-- item 3 -->
+                <div class="item">
+                  <div class="icon no3">
+                    <img src="images/mar.svg" alt="" />
+                  </div>
+
+                  <div class="info">
+                    <p class="label">20 dịch vụ</p>
+                    <p class="title">khám Trực tuyến</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right block -->
+            <div class="content-block">
+              <h1 class="heading">Sức khỏe của bạn, sứ mệnh của chúng tôi.</h1>
+              <p class="desc">
+                Với sứ mệnh phát triển các giải pháp đặc thù cho lĩnh vực Y Tế,
+                hỗ trợ quản trị hệ thống y tế, nâng cao chất lượng khám chữa
+                bệnh, mang công nghệ và trí tuệ phục vụ cộng đồng, góp phần cải
+                thiện và chăm sóc sức khỏe cộng đồng, cam kết vì một cộng đồng
+                khỏe mạnh và hạnh phúc hơn.
+              </p>
+
+              <div class="cta-group">
+                <a href="/feature" class="btn main-cta">Khám phá tính năng</a>
+                <button class="watch-video">
+                  <div class="icon">
+                    <img src="images/play.svg" alt="icon tam giác" />
+                  </div>
+                  <span>Xem giới thiệu</span>
+                </button>
+              </div>
+              <!-- https://youtu.be/PRY7z1_whp4?si=N-TfHuegr-Tcu2wQ -->
+              <!-- Modal chứa video -->
+              <div id="videoModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/PRY7z1_whp4?si=N-TfHuegr-Tcu2wQ"
+                    title="Video giới thiệu"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <p class="desc desc-recent">Hiệu quả gần đây</p>
+              <div
+                class="desc stats"
+                style="display: flex; align-items: center"
+              >
+                <strong>100K+</strong>
+                <span style="margin: 0 5px">Người dùng</span>
+                <strong>200+</strong> <span>Chuẩn đoán bệnh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popular -->
+      <div class="popular">
+        <div class="main-content">
+          <div class="popular-top">
+            <!-- popular left -->
+            <div class="info">
+              <h2 class="heading-lv2">Dịch vụ nổi bật của chúng tôi</h2>
+              <p class="desc">
+                Nâng cao chăm sóc sức khỏe của bạn bằng các công cụ chẩn đoán
+                tiên tiến và chuẩn bị cho một tương lai khỏe mạnh hơn.
+              </p>
+            </div>
+            <!-- popular right -->
+            <div class="controls">
+              <button class="control-btn">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <button class="control-btn">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- popular thumb -->
+          <div class="course-list">
+            <!-- item 1 -->
+            <div class="course-item">
+              <a href="#!">
+                <img src="images/yk1.jpg" alt="Basic web design" class="thumb"
+              /></a>
+
+              <div class="info">
+                <div class="head">
+                  <h3 class="title">
+                    <a class="line-clamp break-all" href="#!"
+                      >Chẩn đoán sức khỏe tiên tiến</a
+                    >
+                  </h3>
+
+                  <div class="rating">
+                    <img src="images/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+
+                <p class="desc break-all">
+                  Sử dụng công cụ chuẩn đoán hiện đại để theo dõi sức khỏe và
+                  nhận các khuyến nghị từ chuyên gia.
+                </p>
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <button class="btn btn-book">
+                    <a class="text2" href="/newdiagnose">Khám phá ngay</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="course-item">
+              <a href="#!">
+                <img src="images/yk9.jpg" alt="UI/UX design" class="thumb"
+              /></a>
+
+              <div class="info">
+                <div class="head">
+                  <h3 class="title">
+                    <a class="line-clamp break-all" href="#!"
+                      >Dịch vụ khám bệnh từ xa</a
+                    >
+                  </h3>
+
+                  <div class="rating">
+                    <img src="images/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+
+                <p class="desc break-all">
+                  Tư vấn với các chuyên gia y tế giàu kinh nghiệm ngay tại nhà
+                  thông qua nền tảng khám bệnh từ xa bảo mật của chúng tôi.
+                </p>
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <button class="btn btn-book">
+                    <a class="text2" href="/service">Khám phá ngay</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="course-item">
+              <a href="#!">
+                <img src="images/yk10.jpg" alt="Web App design" class="thumb"
+              /></a>
+
+              <div class="info">
+                <div class="head">
+                  <h3 class="title">
+                    <a class="line-clamp break-all" href="#!"
+                      >Phân tích hình ảnh y tế</a
+                    >
+                  </h3>
+
+                  <div class="rating">
+                    <img src="images/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+
+                <p class="desc break-all">
+                  Sử dụng công nghệ trí tuệ nhân tạo để phân tích hình ảnh y tế
+                  và đưa ra chẩn đoán chính xác cho bệnh nhân.
+                </p>
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <button class="btn btn-book">
+                    <a class="text2" href="/analysis">Khám phá ngay</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4
+            <div class="course-item">
+              <a href="#!">
+                <img src="images/yk10.jpg" alt="Web App design" class="thumb"
+              /></a>
+
+              <div class="info">
+                <div class="head">
+                  <h3 class="title">
+                    <a class="line-clamp break-all" href="#!"
+                      >Chuẩn đoán bệnh theo công nghệ 4.0</a
+                    >
+                  </h3>
+
+                  <div class="rating">
+                    <img src="images/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+
+                <p class="desc break-all">
+                  Ứng dụng công nghệ 4.0 trong việc phân tích hình ảnh y tế,
+                  giúp nâng cao hiệu quả chẩn đoán và tối ưu hóa quy trình điều
+                  trị.
+                </p>
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <button class="btn btn-book">Khám phá ngay</button>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- item 5
+            <div class="course-item">
+              <a href="#!">
+                <img src="images/yk10.jpg" alt="Web App design" class="thumb"
+              /></a>
+
+              <div class="info">
+                <div class="head">
+                  <h3 class="title">
+                    <a class="line-clamp break-all" href="#!"
+                      >Lịch sử phát triển</a
+                    >
+                  </h3>
+
+                  <div class="rating">
+                    <img src="images/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+
+                <p class="desc break-all">
+                  ìm hiểu về những bước tiến quan trọng trong lĩnh vực y tế, từ
+                  những phương pháp chẩn đoán cổ điển đến sự bùng nổ của công
+                  nghệ 4.0 và trí tuệ nhân tạo.
+                </p>
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <button class="btn btn-book">Khám phá ngay</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- feedback -->
+      <div class="feedback">
+        <div class="main-content">
+          <div class="feedback-list">
+            <!-- item1 -->
+            <div class="feeback-item">
+              <!-- block left -->
+              <div class="info">
+                <img src="images/avatar.jpg" alt="Peter Moor" class="avatar" />
+                <p class="member-name">Nguyễn VĂn Bảnh</p>
+                <p class="desc">Người dùng MediScan</p>
+                <div class="dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <!-- block right -->
+              <div class="content">
+                <img src="images/open.svg" alt="" class="open-qoutes" />
+                <blockquote>
+                  "Ứng dụng rất hữu ích, giúp tôi nhanh chóng phát hiện các
+                  triệu chứng và có những tư vấn cần thiết. Tôi rất yên tâm khi
+                  sử dụng!"
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- item2 -->
+            <div class="feeback-item">
+              <!-- block left -->
+              <div class="info">
+                <img src="images/avatar2.jpg" alt="Peter Moor" class="avatar" />
+                <p class="member-name">Moilet Huỳnh</p>
+                <p class="desc">Người dùng MediScan</p>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <!-- block right -->
+              <div class="content">
+                <img src="images/open.svg" alt="" class="open-qoutes" />
+                <blockquote>
+                  "Đây là một công cụ tuyệt vời để theo dõi sức khỏe cá nhân.
+                  Các chỉ số chẩn đoán rất dễ hiểu và chính xác."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- item3 -->
+            <div class="feeback-item">
+              <!-- block left -->
+              <div class="info">
+                <img src="images/avatar3.jpg" alt="Peter Moor" class="avatar" />
+                <p class="member-name">Chuppy Hồ</p>
+                <p class="desc">Người dùng MediScan</p>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                </div>
+              </div>
+              <!-- block right -->
+              <div class="content">
+                <img src="images/open.svg" alt="" class="open-qoutes" />
+                <blockquote>
+                  "Tôi đã dùng nhiều ứng dụng sức khỏe, nhưng MediScan có giao
+                  diện dễ dùng nhất và kết quả đưa ra rất đáng tin cậy."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- features-1 -->
+      <div class="features">
+        <div class="main-content">
+          <div class="body-features">
+            <!-- block left -->
+            <div class="images">
+              <img
+                class="lower"
+                src="images/yk13.jpg"
+                alt=" Learner outcomes through our awesome platform"
+              />
+              <img
+                src="images/yk12.jpg"
+                alt=" Learner outcomes through our awesome platform"
+              />
+            </div>
+            <!-- block right -->
+            <div class="content">
+              <h2 class="heading-lv2">
+                Kết quả sức khỏe từ nền tảng tiên tiến của chúng tôi
+              </h2>
+              <p class="desc">
+                87% người dùng báo cáo rằng họ đã cải thiện sức khỏe hoặc phát
+                hiện sớm bệnh lý nhờ vào các công cụ chẩn đoán thông minh của
+                chúng tôi.
+              </p>
+              <p class="desc">Báo cáo Hiệu quả Sức khỏe (2023)</p>
+              <a href="/online" class="btn cta-btn">Đăng ký ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- features-2-->
+      <div class="features features-2nd">
+        <div class="main-content">
+          <div class="body-features">
+            <!-- block right -->
+            <div class="images">
+              <img
+                src="images/ph.webp"
+                alt=" Take the next step toward your personal and professional goals with Lesson."
+              />
+            </div>
+            <!-- block left -->
+            <div class="content">
+              <h2 class="heading-lv2">
+                Bước tiếp theo cho sức khỏe cá nhân và cộng đồng cùng MediScan
+              </h2>
+
+              <p class="desc">
+                Hãy hành động ngay để bảo vệ sức khỏe của bạn. Tham gia MediScan
+                để nhận các công cụ chẩn đoán chính xác và hỗ trợ y tế từ hệ
+                thống AI tiên tiến.
+              </p>
+              <a href="/ground" class="btn cta-btn">Tham gia ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- blogs -->
+      <div class="blogs">
+        <div class="main-content">
+          <div class="blog-top">
+            <h2 class="heading-lv2">Blog sức khỏe của chúng tôi</h2>
+            <p class="desc">
+              Đọc các bài viết thường xuyên của chúng tôi về chẩn đoán bệnh,
+              chăm sóc sức khỏe và những thông tin mới nhất trong lĩnh vực y tế
+              để bảo vệ sức khỏe cho bạn và gia đình.
+            </p>
+          </div>
+          <div class="blog-list">
+            <!-- item-1 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/hinh-anh-dau-dau-suy-nghi_111443323.png"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 Tháng 11, 2021</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Làm thế nào để cải thiện sức khỏe và phòng ngừa bệnh tật
+                    hiệu quả?
+                  </h3></a
+                >
+                <a href="/readmore" class="btn">Đọc thêm</a>
+              </div>
+            </div>
+
+            <!-- item-2 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/id14031488-shutterstock_707244118-600x400-1.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">02 Tháng 01, 2022</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Cách chăm sóc sức khỏe toàn diện và phát hiện sớm các bệnh
+                    lý nguy hiểm.
+                  </h3></a
+                >
+                <a href="/readmore" class="btn">Đọc thêm</a>
+              </div>
+            </div>
+
+            <!-- item-3 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/suy_nghi_tieu_cuc_la_gi_bieu_hien_va_tac_dong_den_con_nguoi_7601a2537d.webp"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 Tháng 12, 2022</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Làm thế nào để phát hiện sớm bệnh lý và chăm sóc sức khỏe
+                    chủ động?
+                  </h3></a
+                >
+                <a href="/readmore" class="btn">Đọc thêm</a>
+              </div>
+            </div>
+
+            <!-- item-4 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/blog-1.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">26 Tháng, 03 2024</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Tại sao chẩn đoán sớm là yếu tố quan trọng trong điều trị
+                    bệnh?
+                  </h3></a
+                >
+                <a href="" class="btn">Đọc thêm</a>
+              </div>
+            </div>
+
+            <!-- item-5 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/blog-2.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 November 2021</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Các dấu hiệu cảnh báo sức khỏe cần được chẩn đoán ngay
+                  </h3></a
+                >
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- item-6 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/blog-3.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 November 2021</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Cách phòng ngừa bệnh mãn tính qua chế độ dinh dưỡng và lối
+                    sống
+                  </h3></a
+                >
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- item-7 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/blog-1.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 November 2021</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Tầm quan trọng của khám sức khỏe định kỳ và chẩn đoán sớm.
+                  </h3></a
+                >
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- item-8 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/blog-2.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 November 2021</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Những tiến bộ mới nhất trong công nghệ chẩn đoán y tế.
+                  </h3></a
+                >
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- item-9 -->
+            <div class="item">
+              <a href="#!"
+                ><img
+                  src="images/blog-3.jpg"
+                  alt=" How to become a pro web designer in 2022 and get remot job?"
+                  class="thumb"
+              /></a>
+              <div class="info-blog">
+                <span class="date">21 November 2021</span>
+                <a href="#!"
+                  ><h3 class="title">
+                    Công nghệ AI trong phát hiện sớm bệnh lý tim mạch.
+                  </h3></a
+                >
+                <a href="" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--  part footer -->
+    <footer class="footer">
+      <div class="main-content">
+        <div class="row">
+          <!-- coulum-1 -->
+          <div class="colum">
+            <div class="logo-container">
+              <div class="logo">
+                <span class="med">Medi</span><span class="scan">Scan</span>
+              </div>
+            </div>
+            <p class="desc">
+              Cần hỗ trợ về sức khỏe của bạn? Hãy tin tưởng chúng tôi. Với
+              MediScan, việc chẩn đoán bệnh trở nên dễ dàng hơn bao giờ hết.
+            </p>
+            <div class="socials">
+              <a href=""
+                ><img src="images/Twitter.svg" alt="Twitter" class="icon"
+              /></a>
+              <a href=""
+                ><img src="images/Facebook.svg" alt="Facebook" class="icon"
+              /></a>
+              <a href=""
+                ><img src="images/Linkedin.svg" alt="Linkedin" class="icon"
+              /></a>
+              <a href=""
+                ><img src="images/Instagram.svg" alt="Instagram" class="icon"
+              /></a>
+            </div>
+          </div>
+          <!-- colum-2 -->
+          <div class="colum">
+            <h3 class="title">Công ty</h3>
+            <ul class="list">
+              <li><a href="#!">Về chúng tôi</a></li>
+              <li><a href="#!">Dịch vụ nổi bật</a></li>
+              <li><a href="#!">Bảng giá dịch vụ</a></li>
+              <li><a href="#!">Tin tức sức khỏe</a></li>
+            </ul>
+          </div>
+          <!-- colum-3 -->
+          <div class="colum">
+            <h3 class="title">Hổ trợ</h3>
+            <ul class="list">
+              <li><a href="#!">Câu hỏi thường gặp</a></li>
+              <li><a href="#!">Điều khoản và điều kiện</a></li>
+              <li><a href="#!">Chính sách bảo mật</a></li>
+              <li><a href="#!">Liên hệ với chúng tôi</a></li>
+            </ul>
+          </div>
+          <!-- colum-4 -->
+          <div class="colum">
+            <h3 class="title">Địa chỉ</h3>
+            <ul class="list">
+              <li>
+                <a href="#!"
+                  ><strong>Địa điểm:</strong> 61 Lê Văn Sỹ, Phường 1, Quận Tân
+                  Bình, Thành Phố Hồ Chí Minh</a
+                >
+              </li>
+              <li>
+                <a href="#!"><strong>Email:</strong> email@gmail.com</a>
+              </li>
+              <li>
+                <a href="#!"><strong>Điện thoại:</strong> + 000 1234 567 890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Bản quyền ©2024 MediScan. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

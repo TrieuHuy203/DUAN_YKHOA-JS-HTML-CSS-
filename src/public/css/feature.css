@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #222020;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-nav ul li {
+  margin: 0 15px;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero-section {
+  background-image: url("images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-section h2 {
+  font-size: 3em;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-section .btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.features-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  width: calc(50% - 20px);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-info h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.feature-info p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn-learn-more {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-learn-more:hover {
+  background-color: #2980b9;
+}
+
+.about-section {
+  padding: 60px 0;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section .btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer .contact-info {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}

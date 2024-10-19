@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #28a745; /* Màu xanh lá cây tươi sáng */
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.nav {
+  background: #343a40; /* Màu xám tối cho thanh điều hướng */
+
+  padding: 15px 0; /* Tăng khoảng cách trên và dưới */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho thanh điều hướng */
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center; /* Căn giữa các mục trong danh sách */
+  margin: 0; /* Xóa margin của ul */
+  padding: 0; /* Xóa padding của ul */
+}
+
+.nav ul li {
+  display: inline; /* Hiển thị các mục theo chiều ngang */
+  margin: 0 20px; /* Tăng khoảng cách giữa các mục */
+}
+
+.nav a {
+  color: #ffffff; /* Màu chữ trắng */
+  text-decoration: none; /* Xóa gạch chân */
+  font-weight: bold; /* Đặt chữ đậm */
+  padding: 8px 15px; /* Thêm padding để tạo khoảng cách quanh chữ */
+  border-radius: 5px; /* Bo góc cho các liên kết */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.nav a:hover {
+  background-color: #28a745; /* Màu nền xanh lá khi hover */
+  color: #ffffff; /* Giữ màu chữ trắng khi hover */
+}
+
+.core-values {
+  background: #ffffff;
+  padding: 40px;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #28a745; /* Màu xanh lá cây tươi sáng */
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+
+  padding: 10px;
+  border-left: 5px solid #28a745; /* Đường viền bên trái */
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #343a40; /* Màu xám tối */
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}

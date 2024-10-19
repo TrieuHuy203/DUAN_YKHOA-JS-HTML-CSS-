@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký/Đăng nhập</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signin-signup">
+        <form id="login-form" action="" class="sign-in-form">
+          <h2 class="title">Đăng nhập</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              placeholder="Tên đăng nhập(Email)"
+              id="ten"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              placeholder="Mật khẩu"
+              id="matkhau"
+              required
+            />
+          </div>
+          <input type="submit" value="Đăng nhập" class="btn" />
+          <p id="login-message" style="display: none; color: green">
+            Đăng nhập thành công
+          </p>
+          <p class="social-text">Hoặc đăng nhập bằng tài khoản mạng xã hội</p>
+          <div class="social-media">
+            <a href="#" class="social-icon"> <i class="fab fa-facebook"></i> </a
+            ><a href="" class="social-icon"> <i class="fab fa-twitter"></i> </a
+            ><a href="" class="social-icon"> <i class="fab fa-google"></i> </a
+            ><a href="" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <p class="account-text">
+            Bạn chưa có tài khoản?
+            <a href="" id="sign-up-btn2">Đăng ký</a>
+          </p>
+        </form>
+        <!---->
+
+        <form action="" class="sign-up-form" id="signUpForm">
+          <h2 class="title">Đăng ký</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nhập tên đăng nhập" id="username" />
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="Email" id="email" />
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Mật khẩu" id="password" />
+          </div>
+
+          <input type="submit" value="Đăng ký" class="btn" />
+          <p id="successMessage" style="color: green; display: none">
+            Đăng ký thành công! Quay lại trang đăng nhập
+          </p>
+
+          <p class="social-text">Hoặc đăng ký bằng tài khoản mạng xã hội</p>
+          <div class="social-media">
+            <a href="/fb" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-icon"> <i class="fab fa-twitter"></i> </a>
+            <a href="#" class="social-icon"> <i class="fab fa-google"></i> </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+
+          <p class="account-text">
+            Bạn đã có tài khoản?
+            <a href="#" id="sign-in-btn2">Đăng nhập </a>
+          </p>
+
+          <p id="successMessage" style="color: green; display: none">
+            Đăng ký thành công!
+          </p>
+        </form>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Thành viên của Hệ thống Chẩn đoán Bệnh?</h3>
+            <p>
+              Bạn đã có tài khoản? Hãy đăng nhập để truy cập vào các tính năng
+              và dịch vụ của chúng tôi.
+            </p>
+
+            <button class="btn" id="sign-in-btn">Đăng nhập</button>
+          </div>
+          <img src="/images/bs6.png" alt="" class="image" />
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Bạn mới đến với Hệ thống Chẩn đoán Bệnh?</h3>
+            <p>
+              Tạo tài khoản mới để bắt đầu trải nghiệm các dịch vụ chuẩn đoán
+              bệnh tiện lợi và chính xác.
+            </p>
+
+            <button class="btn" id="sign-up-btn">Đăng ký</button>
+          </div>
+          <img src="/images/bs2.png" alt="" class="image" />
+        </div>
+      </div>
+    </div>
+    <!-- Thanh loading -->
+    <div id="loading">
+      <div class="loader"></div>
+    </div>
+    <script src="/js/register.js"></script>
+  </body>
+</html>

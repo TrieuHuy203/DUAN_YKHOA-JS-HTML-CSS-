@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Tham Gia Nhóm</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/css/ground.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Nhóm của Chúng Tôi</div>
+      <ul>
+        <li><a href="/home">Trang Chủ</a></li>
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="#">Dịch Vụ</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <form id="joinGroupForm" onsubmit="return handleSubmit(event)">
+        <h2>Đăng Ký Tham Gia</h2>
+        <div class="input-box">
+          <input type="text" id="name" required />
+          <label for="name">Họ Tên</label>
+        </div>
+        <div class="input-box">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+          <input type="text" id="phone" required />
+          <label for="phone">Số Điện Thoại</label>
+        </div>
+        <div class="input-box">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message">Tại Sao Bạn Muốn Tham Gia?</label>
+        </div>
+        <button type="submit" class="submit-btn">Tham Gia Ngay</button>
+      </form>
+    </div>
+
+    <script src="/js/ground.js"></script>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault(); // Ngăn chặn hành động gửi form mặc định
+
+        // Hiện thông báo
+        Swal.fire({
+          title: "Đăng Ký Thành Công!",
+          text: "Cảm ơn bạn đã đăng ký tham gia nhóm của chúng tôi!",
+          icon: "success",
+          confirmButtonText: "Tiếp Tục",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Chuyển tới trang newground
+            window.location.href = "/newground";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

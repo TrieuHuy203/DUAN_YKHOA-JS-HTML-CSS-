@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 30px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffeb3b;
+}
+
+.content-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.content-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container .date {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.content-container .intro {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.detail-content h2 {
+  margin: 25px 0 10px;
+  color: #6a11cb;
+  border-bottom: 2px solid #6a11cb;
+  padding-bottom: 5px;
+  font-size: 1.8em;
+}
+
+.detail-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.detail-content blockquote {
+  background: #f9f9f9;
+  border-left: 4px solid #6a11cb;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #555;
+}
+
+.detail-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.detail-content ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.footer-note {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  background: #ffeb3b;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background: #6a11cb;
+  color: white;
+  transform: scale(1.05);
+}

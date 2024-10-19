@@ -1,0 +1,944 @@
+/* code common for a website */
+* {
+  box-sizing: border-box; /*lesson 47*/ /*to that the size fits the design*/
+}
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* restore default font size */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========common=========== */
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+
+  /* center */
+  margin-left: auto;
+  margin-right: auto;
+  /* not close to the edge */
+  max-width: calc(100% - 48px);
+}
+
+.btn {
+  /*btn btn is using the "a" tag, so if you want to add padding, you must add display: inline-block first*/
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #171100;
+  line-height: 50px;
+  padding: 0px 16px;
+  min-width: 118px;
+}
+
+/*blur effect */
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* ===========header=========== */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky; /*compression effect of the nav bar*/
+  top: -28px;
+  z-index: 1; /*kéo không bị che chữ lesson*/
+}
+
+.header .bodyheader {
+  display: flex;
+  align-items: center; /*center*/
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #5f5b53;
+  text-align: center;
+  font-size: 1.6rem;
+  /* distance between elements */
+  padding: 0px 21px;
+  position: relative;
+}
+
+Create a fake shadow layer
+.nav li.active a, /*bold the word home*/
+  .nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 0.5px 0 0 currentColor;
+}
+
+/*underlined*/
+/* .nav li.active a::after { */
+/* Because the "a" tag has the display : inline attribute, the underline does not appear yet, so we must add display : inline-block */
+/* display: inline-block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  position: absolute;
+  left: 21px;
+  bottom: 1px;
+} */
+
+.active {
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+/* ============part main============ */
+
+.hero {
+  margin-top: 56px;
+  background: #fffcf4;
+}
+
+.hero .bodymain {
+  display: flex;
+}
+/* -------------block left-------------- */
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .content-block {
+  width: 52%;
+}
+
+/* helps prevent photos from being broken every time another photo is uploaded to replace the old photo */
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover; /*Helps prevent photos from being damaged*/
+  border-radius: 20px;
+}
+
+.hero .hero-summary {
+  width: 270px;
+  padding: 24px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+/* Impacts an item located behind another item */
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  /* center icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9e8;
+}
+
+.hero-summary .icon no2 {
+  background-color: #fcefff;
+}
+
+.hero-summary .icon no3 {
+  background-color: #ebeaff;
+}
+
+.hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero-summary .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.hero-summary .title {
+  color: #171100;
+  font-size: 1.8rem;
+
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+/* ----------------------------block right----------------------------- */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-top: 22px;
+}
+
+.hero .cta-group {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .main-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+  border: none; /*remove the border*/
+  background: transparent;
+  display: flex;
+  margin-left: 28px;
+  align-items: center; /*center  span*/
+  cursor: pointer; /*When moving in, the hand appears*/
+}
+
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  margin-left: 14px;
+}
+
+.hero .desc-recent {
+  margin-top: 48px;
+}
+
+.hero .stats strong {
+  margin-right: 15px; /*distance 15px*/
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.hero .stats strong:nth-child(2) {
+  /*select strong tow*/
+  margin-left: 28px;
+}
+
+.hero .stats {
+  margin-top: 8px;
+}
+
+/* ===============================popular============================== */
+.popular {
+  padding: 65px 0;
+
+  margin-top: 135px;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between; /*2 elements arranged close to 2 edges*/
+  align-items: center;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+
+.popular-top .desc {
+  color: #5f5b53;
+  margin-top: 16px;
+  width: 458px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.popular-top .control-btn {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+
+  /* căn giữa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px; /*distance between two buttons*/
+}
+
+.popular-top .control-btn:hover {
+  /*Change color when button is pressed*/
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer; /*When moving in, the hand appears*/
+}
+
+.popular .course-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.popular .course-item .thumb {
+  width: 100%;
+  height: 278px;
+  object-fit: cover; /*helps prevent image distortion*/
+  border-radius: 12px 12px 0px 0px;
+}
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.75);
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.popular .course-item .rating {
+  /*center*/
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.popular .rating .value {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.popular .course-item .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.popular .course-item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.popular .course-item .btn-book {
+  border: none;
+}
+
+.popular .course-item .btn-book:hover {
+  background: var(--primary-color);
+}
+
+/*(*) Optimize so that when posting too long content, the structure remains intact  lesson 90.7*/
+.popular .course-item {
+  flex: 1;
+}
+
+.line-clamp {
+  /*Show three dots when the title is too long */ /*add title tag*/
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clam, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp .line-2 {
+  /*If the length exceeds two lines, an ellipsis will appear*/ /*add to the paragraph*/
+  --line-clamp: 2;
+}
+
+/* Make sure to keep the structure intact */
+.break-all {
+  word-break: break-all;
+}
+
+/* ==================feedback=================== */
+
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #2e2100;
+}
+
+.feeback-item {
+  display: flex;
+}
+
+.feeback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feeback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.feeback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.feeback-item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+
+.feeback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feeback-item .dot.active {
+  background: var(--primary-color);
+  cursor: pointer;
+}
+.feeback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feeback-item blockquote {
+  color: #fff;
+  font-size: 2.2rem;
+  font-style: italic;
+  line-height: 1.54;
+}
+
+/* lesson 90.9 */
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feeback-item {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  transition: all ease 0.5s;
+  transform: translate(-100%);
+}
+
+/* ============================features-1====================== */
+.features {
+  margin-top: 135px;
+  padding: 65px 0px;
+}
+
+.features .body-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 5);
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  /* đoạn này quan trọng bài 90.10 phút thứ 10 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /**/
+}
+
+.features .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.features .cta-btn {
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
+  margin-top: 32px;
+}
+
+/* ============================features-2====================== */
+
+.features-2nd {
+  margin-top: 70px;
+}
+.features-2nd .body-features {
+  flex-direction: row-reverse; /*change position*/
+}
+
+.features-2nd .content {
+  width: 41%;
+}
+
+.features-2nd .images img {
+  width: 470px;
+  height: 440px;
+}
+
+/* ============================blog====================== */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  width: 448px;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.blogs .blog-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.blogs .item {
+  width: calc(33.33% - 20px);
+  border-radius: 16px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.blogs .item .thumb {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blogs .item .info-blog {
+  padding: 20px 20px 28px;
+}
+
+.blogs .item .date {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  /* center round dot */
+  display: inline-flex; /*chỉ chứa vừa nội dung của nó */
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+/* round dot */
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  margin-right: 4px;
+}
+
+/* underline */
+.blogs .item .date::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  right: -27px; /*lesson 90.12 16minute*/
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blogs .item .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-top: 30px;
+}
+
+.blogs .item .btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+
+.blogs .item .btn:hover {
+  background: var(--primary-color);
+}
+
+.blogs .item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.75);
+}
+
+.blogs .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+
+/* =========================footer====================== */
+footer {
+  background: #2e2100;
+  padding: 96px 135px 0px;
+}
+
+.footer .row {
+  padding-bottom: 38px;
+  display: flex;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .row .colum {
+  width: 21.6%;
+}
+
+.footer .row .colum:first-child {
+  width: 35%;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .list li:last-child a {
+  /*select the last li tag*/
+  margin-bottom: 0;
+}
+
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+.footer .copyright {
+  padding: 28px 0px;
+  color: #807d74;
+  text-align: center;
+  font-size: 1, 4rem;
+  line-height: 1.86;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  position: relative; /* Needed for the dropdown */
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: block;
+}
+
+.nav ul li:hover > a {
+  background-color: #f1f1f1;
+  /*hiệu ứng to chữ*/
+  transform: scale(1.2); /* Phóng to chữ khi di chuột vào */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Đổ bóng đậm hơn */
+  font-weight: bold; /* Làm chữ đậm hơn */
+}
+
+/* Dropdown Content */
+.nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position it below the parent */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+}
+
+.nav ul ul li {
+  margin: 0;
+}
+
+.nav ul ul li a {
+  padding: 8px 10px;
+  width: 200px;
+  color: #000;
+}
+
+/* Show the dropdown when hovering the parent list item */
+.nav ul li:hover > ul {
+  display: block;
+}
+
+/* Hiệu ứng hover */
+@keyframes logoBounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Vị trí ban đầu */
+  }
+  50% {
+    transform: translateY(-10px); /* Nhấc lên 10px */
+  }
+}
+
+.logo-container {
+  text-align: center;
+  animation: logoBounce 0.8s ease-in-out infinite; /* Thêm hiệu ứng nhấp nháy cho logo */
+}
+
+.med {
+  color: #007bff; /* Màu cho phần "Medi" */
+}
+
+.scan {
+  color: #28a745; /* Màu cho phần "Scan" */
+  margin-left: 5px; /* Khoảng cách giữa hai phần */
+}
+
+/*video*/
+/* Kiểu cho nút Xem Video */
+.watch-video {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.watch-video:hover {
+  background-color: #2980b9;
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+/* Kiểu cho modal */
+.modal {
+  display: none; /* Ẩn modal mặc định */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Màu nền mờ */
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  padding: 20px;
+  width: 60%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.modal iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  color: #e74c3c;
+}
+
+.text2 {
+  color: white;
+}
