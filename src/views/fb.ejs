@@ -109,7 +109,7 @@
       <h2>Đăng Ký Bằng Facebook</h2>
       <div class="fb-btn" onclick="showForm()">Đăng Ký Bằng Facebook</div>
 
-      <!-- Form đăng ký -->
+      <!-- Form đăng ký thro -->
       <div class="form" id="signupForm">
         <form id="registerForm">
           <label for="name">Họ Tên:</label>
@@ -149,7 +149,7 @@
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
-          // Hiển thị thông báo thành công với SweetAlert2
+          // Hiển thị thông báo thành công
           Swal.fire({
             title: "Đăng ký thành công!",
             text: "Bạn đã đăng ký thành công qua Facebook. Đang chuyển về trang đăng nhập...",

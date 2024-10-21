@@ -134,7 +134,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s;
+  transition: background 0.3s; /*chuyển đổi*/
   display: block;
   width: 100%;
 }
